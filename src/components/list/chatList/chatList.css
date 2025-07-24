@@ -1,6 +1,12 @@
 .chatList {
   flex: 1;
   overflow: scroll;
+
+  overflow-y: scroll;
+  height: 400px;
+
+  scrollbar-width: thin;
+  scrollbar-color: rgba(249, 180, 88, 0.6) white;
 }
 
 
@@ -84,4 +90,17 @@
   font-size: 15px;
   font-weight: 300;
   color: #999999;
+}
+
+.chatList::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chatList::-webkit-scrollbar-track {
+  background: white;
+}
+
+.chatList::-webkit-scrollbar-thumb {
+  background-color: rgba(249, 180, 88, 0.6);
+  border-radius: 10px;
 }
