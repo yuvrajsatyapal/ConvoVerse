@@ -1,3 +1,9 @@
+.chatList {
+  flex: 1;
+  overflow: scroll;
+}
+
+
 .chatList .search {
   display: flex;
   align-items: center;
@@ -22,6 +28,11 @@
   color: white;
   flex: 1;
   font-size: 16px;
+  
+}
+
+.chatList .search .search-bar input::placeholder {
+  color: white;
 }
 
 .chatList .search img,
@@ -38,4 +49,38 @@
   background-color: rgba(249, 180, 88, 0.6);
   padding: 10px;
   border-radius: 10px;
+}
+
+.chatList .item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-bottom: 1px solid white;
+}
+
+.chatList .item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  object-fit: cover;
+}
+
+
+.chatList .item .texts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+}
+
+.chatList .item .texts span {
+  font-weight: 500;
+  font-size: 21px;
+}
+
+.chatList .item .texts p {
+  font-size: 15px;
+  font-weight: 400;
 }

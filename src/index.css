@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url("../public/assets/images/background-image.png");
+  background-image: url("./assets/images/background-image.png");
   background-size: cover;         
   background-position: center;    
   background-repeat: no-repeat;   
@@ -23,7 +23,7 @@ body {
   height: 90vh;
   display: flex;
   
-  background-color: rgba(253, 226, 190, 0.7);
+  background-color: rgba(253, 226, 190, 0.45);
   backdrop-filter: blur(19px) staturate(180%);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
