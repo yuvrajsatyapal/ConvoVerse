@@ -45,7 +45,35 @@ const Chat = () => {
           <img src="/assets/images/info.png" alt="" />
         </div>
       </div>
-      <div className='center'></div>
+      <div className='center'>
+        <div className="message">
+          <img src="./assets/images/avatar.png" alt="" />
+          <div className="texts">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, perferendis deserunt odit sint delectus minus numquam itaque porro neque sit rem earum explicabo eum nulla libero autem! Reiciendis, debitis fuga.</p>
+            <span>1 min ago</span>
+          </div>
+        </div>
+        <div className="message own">
+          <div className="texts">
+            <img src='https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png'/>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, perferendis deserunt odit sint delectus minus numquam itaque porro neque sit rem earum explicabo eum nulla libero autem! Reiciendis, debitis fuga.</p>
+            <span>1 min ago</span>
+          </div>
+        </div>
+        <div className="message">
+          <img src="./assets/images/avatar.png" alt="" />
+          <div className="texts">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, perferendis deserunt odit sint delectus minus numquam itaque porro neque sit rem earum explicabo eum nulla libero autem! Reiciendis, debitis fuga.</p>
+            <span>1 min ago</span>
+          </div>
+        </div>
+        <div className="message own">
+          <div className="texts">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, perferendis deserunt odit sint delectus minus numquam itaque porro neque sit rem earum explicabo eum nulla libero autem! Reiciendis, debitis fuga.</p>
+            <span>1 min ago</span>
+          </div>
+        </div>
+      </div>
       <div className='bottom'>
         <div className="icons">
           <img src="/assets/images/image.png" alt="" />
