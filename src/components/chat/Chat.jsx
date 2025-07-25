@@ -75,6 +75,7 @@ const Chat = () => {
             <span>1 min ago</span>
           </div>
         </div>
+        
       </div>
       <div className='bottom'>
         <div className="icons">
