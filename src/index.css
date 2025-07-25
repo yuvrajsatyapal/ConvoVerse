@@ -23,8 +23,8 @@ body {
   height: 90vh;
   display: flex;
   
-  background-color: rgba(243, 213, 175, 0.8);
+  background-color: rgba(30, 30, 30, 0.58);
   backdrop-filter: blur(19px) staturate(180%);
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }

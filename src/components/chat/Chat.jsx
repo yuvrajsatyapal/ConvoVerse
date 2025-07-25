@@ -36,8 +36,10 @@ const Chat = () => {
       <div className='top'>
         <div className='user'>
           <img src="/assets/images/avatar.png" alt="" />
-          <span className="texts">Alex</span>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <div className="texts">
+            <span>Alex</span>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
         </div>
         <div className="icons">
           <img src="/assets/images/phone.png" alt="" />
@@ -55,7 +57,7 @@ const Chat = () => {
         </div>
         <div className="message own">
           <div className="texts">
-            <img src='https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png'/>
+            <img src='https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png' />
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, perferendis deserunt odit sint delectus minus numquam itaque porro neque sit rem earum explicabo eum nulla libero autem! Reiciendis, debitis fuga.</p>
             <span>1 min ago</span>
           </div>

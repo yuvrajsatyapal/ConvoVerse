@@ -6,7 +6,7 @@
   height: 400px;
 
   scrollbar-width: thin;
-  scrollbar-color: rgba(249, 180, 88, 0.6) white;
+  scrollbar-color: #999999 white;
 }
 
 
@@ -19,7 +19,7 @@
 
 .chatList .search .search-bar {
   flex: 1;
-  background-color: rgba(249, 180, 88, 0.6);
+  background-color: rgba(30, 30, 30, 0.8);
   display: flex;             
   align-items: center;         
   gap: 20px;                   
@@ -52,7 +52,7 @@
   width: 36px;
   height: 36px;
   cursor: pointer;
-  background-color: rgba(249, 180, 88, 0.6);
+  background-color: rgba(41, 158, 255, 0.8);
   padding: 10px;
   border-radius: 10px;
 }
@@ -62,7 +62,7 @@
   align-items: center;
   gap: 20px;
   padding: 20px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #999999;
 }
 
 .chatList .item img {
@@ -89,7 +89,7 @@
 .chatList .item .texts p {
   font-size: 15px;
   font-weight: 300;
-  color: #999999;
+  color: white;
 }
 
 .chatList::-webkit-scrollbar {

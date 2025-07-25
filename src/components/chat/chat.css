@@ -2,10 +2,9 @@
     flex: 2;
     display: flex;
     flex-direction: column;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    border-left: 1px solid #999999;
+    border-right: 1px solid #999999;
     height: 100%;
-    
 }
 
 .chat .top {
@@ -13,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #999999;
 }
 
 .chat .top .user {
@@ -43,7 +42,7 @@
 
 .chat .top .user p {
     font-size: 14px;
-    color: #999999;
+    color: white;
 }
 
 .chat .top .icons {
@@ -94,19 +93,22 @@
 }
 
 .chat .center .message.own .texts p {
-    background-color: rgba(249, 180, 88, 0.7);
+    background-color: rgba(41, 158, 255, 0.3);
     color: white;
     padding : 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 1, 0.3);
 }
 
 .chat .center .message .texts p {
     padding: 20px;
     border-radius: 10px;
-    background-color: rgba(197, 132, 45, 0.7);
+    background-color: rgba(41, 158, 255, 0.65);
 }
 
 .chat .center .message .texts span {
     font-size: 13px;
+    align-self: flex-end;
+    margin-right: 4px;
 }
 
 .chat .center .message .texts img {
@@ -115,7 +117,6 @@
     object-fit: cover;
     border-radius: 10px;
 }
-
 
 .chat .bottom {
     padding: 20px;
@@ -140,7 +141,7 @@
 
 .chat .bottom input {
     flex: 1;
-    background-color: rgba(249, 180, 88, 0.6);;
+    background-color: rgba(30, 30, 30, 0.8);
     border: none;
     outline: none;
     color: white;
@@ -156,7 +157,7 @@
 
 
 .chat .bottom .sendButton {
-    background-color: rgba(249, 180, 88, 0.6);
+    background-color: rgba(41, 158, 255, 0.8);
     color: white;
     padding: 10px 20px;
     border: none;
