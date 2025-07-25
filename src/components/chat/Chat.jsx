@@ -1,7 +1,36 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Chat.css'
+import EmojiPicker from 'emoji-picker-react'
 
 const Chat = () => {
+
+  const [open, setOpen] = useState(false);
+  const [text, setText] = useState("");
+
+  const handleEmoji = (e) => {
+    setText((prev) => prev + e.emoji);
+    setOpen(false);
+  }
+
+  console.log(text);
+
+  useEffect(() => {
+    const style = document.createElement('style')
+    style.innerHTML = `
+      .epr-search-icon-wrapper {
+        display: none !important;
+      }
+      .epr-search-container input {
+        padding-left: 12px !important;
+      }
+    `
+    document.head.appendChild(style)
+    return () => {
+      document.head.removeChild(style)
+    }
+  }, [])
+
+
   return (
     <div className='chat'>
       <div className='top'>
@@ -23,9 +52,14 @@ const Chat = () => {
           <img src="/assets/images/camera.png" alt="" />
           <img src="/assets/images/mic.png" alt="" />
         </div>
-        <input type="text" placeholder='Type a message' />
+        <input type="text" placeholder='Type a message' value={text} onChange={(e) => setText(e.target.value)} />
         <div className='emoji'>
-          <img src="/assets/images/emoji.png" alt="" />
+          <img src="/assets/images/emoji.png" alt="" onClick={() => setOpen((prev) => !prev)} cursor="pointer" />
+          {open && (
+            <div className='picker'>
+              <EmojiPicker onEmojiClick={handleEmoji} searchDisabled={true} />
+            </div>
+          )}
         </div>
         <button className='sendButton'>Send</button>
       </div>
